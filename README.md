@@ -70,3 +70,7 @@ The CountVectorizer, TF-IDF, BioBERT and Universal Sentence Encoder pipelines us
 - **Two pipelines used a different test split.** All splits are 80/20 with the same seed, but they were applied to different DataFrames. The clinical-embeddings + `ClassifierDL` and Universal Sentence Encoder pipelines were therefore evaluated on a different set of 139 documents (class supports differ slightly), so their scores are not strictly comparable with the other rows.
 - No hyperparameter search was performed. Better results are expected from tuned models or from fine-tuned transformer classifiers.
 - Software versions are from early 2022 and may need small API changes on current releases.
+
+## License
+
+The code and notebooks are released under the [MIT License](LICENSE). The MTSamples data files are not covered by this license; they remain under the terms of their original source (see Data).
